@@ -1,0 +1,43 @@
+diff -crN a/luvcview.c b/luvcview.c
+*** a/luvcview.c	2008-12-26 02:24:18.000000000 +0100
+--- b/luvcview.c	2011-08-06 04:01:30.540820783 +0200
+***************
+*** 29,38 ****
+  #include <sys/file.h>
+  #include <string.h>
+  #include <pthread.h>
+! #include <SDL/SDL.h>
+! #include <SDL/SDL_thread.h>
+! #include <SDL/SDL_audio.h>
+! #include <SDL/SDL_timer.h>
+  #include <linux/videodev.h>
+  #include <sys/ioctl.h>
+  #include <sys/mman.h>
+--- 29,38 ----
+  #include <sys/file.h>
+  #include <string.h>
+  #include <pthread.h>
+! #include <SDL.h>
+! #include <SDL_thread.h>
+! #include <SDL_audio.h>
+! #include <SDL_timer.h>
+  #include <linux/videodev.h>
+  #include <sys/ioctl.h>
+  #include <sys/mman.h>
+***************
+*** 42,48 ****
+  #include <sys/time.h>
+  #include <signal.h>
+  #include <X11/Xlib.h>
+! #include <SDL/SDL_syswm.h>
+  #include "v4l2uvc.h"
+  #include "gui.h"
+  #include "utils.h"
+--- 42,48 ----
+  #include <sys/time.h>
+  #include <signal.h>
+  #include <X11/Xlib.h>
+! #include <SDL_syswm.h>
+  #include "v4l2uvc.h"
+  #include "gui.h"
+  #include "utils.h"

@@ -1,0 +1,10 @@
+# ChangeLog for sys-libs/libnih
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*libnih-1.0.2 (17 May 2011)
+
+  17 May 2011; Michał Ziąbkowski <mziab@o2.pl> +libnih-1.0.2.ebuild,
+  +files/optional-dbus.patch, +metadata.xml:
+  New ebuild.
+

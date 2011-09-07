@@ -1,0 +1,14 @@
+Some patches for the portage tree to be more friendly with the portage-multilib project (https://github.com/sjnewbury/multilib-overlay/tree/portage-multilib).
+
+g-ir-scanner.patch (/usr/bin/g-ir-scanner from dev-libs/gobject-introspection) adds multilib support:
+	cd /usr/bin
+	patch -p0 < g-ir-scanner.patch
+gst-plugins-bad.eclass.patch:
+	cd /usr/portage/eclass
+	patch -p0 < gst-plugins-bad.eclass.patch
+gst-plugins-base-eclass-2.patch taken from Gentoo Bug #300256:
+	cd /usr/portage/eclass
+	patch -p0 < gst-plugins-base-eclass-2.patch
+portage-multilib_profile.patch (adds a new profile to select from, as described in the portage multilib documentation):
+	cd /usr/portage
+	patch -p1 < portage-multilib_profile.patch

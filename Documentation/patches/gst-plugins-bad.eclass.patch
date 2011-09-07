@@ -1,0 +1,17 @@
+--- gst-plugins-bad.eclass.ori	2011-08-05 23:38:58.043608993 +0200
++++ gst-plugins-bad.eclass	2011-08-05 23:39:19.203898078 +0200
+@@ -93,10 +93,10 @@
+ 
+ 	# Link with the syswide installed gst-libs if needed
+ 	gst-plugins10_find_plugin_dir
+-	sed -e "s:\$(top_builddir)/gst-libs/gst/interfaces/libgstphotography:${ROOT}/usr/$(get_libdir)/libgstphotography:" \
+-		-e "s:\$(top_builddir)/gst-libs/gst/signalprocessor/libgstsignalprocessor:${ROOT}/usr/$(get_libdir)/libgstsignalprocessor:" \
+-		-e "s:\$(top_builddir)/gst-libs/gst/video/libgstbasevideo:${ROOT}/usr/$(get_libdir)/libgstbasevideo:" \
+-		-e "s:\$(top_builddir)/gst-libs/gst/basecamerabinsrc/libgstbasecamerabinsrc:${ROOT}/usr/$(get_libdir)/libgstbasecamerabinsrc:" \
++	sed -e "s:\$[({]top_builddir[)}]/gst-libs/gst/interfaces/libgstphotography-@GST_MAJORMINOR@.la:-lgstphotography-@GST_MAJORMINOR@:" \
++		-e "s:\$[({]top_builddir[)}]/gst-libs/gst/signalprocessor/libgstsignalprocessor-@GST_MAJORMINOR@.la:-lgstsignalprocessor-@GST_MAJORMINOR@:" \
++		-e "s:\$[({]top_builddir[)}]/gst-libs/gst/video/libgstbasevideo-@GST_MAJORMINOR@.la:-lgstbasevideo-@GST_MAJORMINOR@:" \
++		-e "s:\$[({]top_builddir[)}]/gst-libs/gst/basecamerabinsrc/libgstbasecamerabinsrc-@GST_MAJORMINOR@.la:-lgstbasecamerabinsrc-@GST_MAJORMINOR@:" \
+ 		-i Makefile.in
+ 
+ 	# Remove generation of any other Makefiles except the plugin's Makefile

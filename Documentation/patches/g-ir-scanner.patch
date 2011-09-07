@@ -1,0 +1,15 @@
+--- /usr/bin/g-ir-scanner.backup	2011-07-01 14:54:35.895281414 +0200
++++ /usr/bin/g-ir-scanner	2011-08-02 01:31:54.038775925 +0200
+@@ -35,7 +35,11 @@
+ else:
+     # This is a private directory, we don't want to pollute the global
+     # namespace.
+-    path = os.path.join('/usr/lib64', 'gobject-introspection')
++    print os.getenv('ABI')
++    if os.getenv('ABI') == "amd64":
++        path = os.path.join('/usr/lib64', 'gobject-introspection')
++    else:
++        path = os.path.join('/usr/lib32', 'gobject-introspection')
+ sys.path.insert(0, path)
+ 
+ from giscanner.scannermain import scanner_main

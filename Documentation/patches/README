@@ -1,6 +1,6 @@
 Some patches for the portage tree to be more friendly with the portage-multilib project (https://github.com/sjnewbury/multilib-overlay/tree/portage-multilib).
 
-g-ir-scanner.patch (/usr/bin/g-ir-scanner from dev-libs/gobject-introspection) adds multilib support:
+g-ir-scanner.patch (/usr/bin/g-ir-scanner from dev-libs/gobject-introspection) adds multilib support (Gentoo Bug #371717):
 	cd /usr/bin
 	patch -p0 < g-ir-scanner.patch
 gst-plugins-bad.eclass.patch:

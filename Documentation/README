@@ -1,0 +1,41 @@
+List of external ebuilds:
+
+app-benchmarks/hardinfo checked out from sabayon overlay:
+	git remote add sabayon-overlay git://sabayon.org/projects/overlay.git
+	git fetch sabayon-overlay
+	git checkout sabayon-overlay app-benchmarks/hardinfo
+	
+app-text/gimagereader checked out out from sabayon overlay:
+	git remote add sabayon-overlay git://sabayon.org/projects/overlay.git
+	git fetch sabayon-overlay
+	git checkout sabayon-overlay app-text/gimagereader
+	
+app-text/tesseract checked out from nirbheek overlay:
+	git remote add nirbheek-overlay git://git.overlays.gentoo.org/dev/nirbheek.git
+	git fetch nirbheek-overlay
+	git checkout nirbheek-overlay app-text/tesseract
+	
+games-puzzle/braid checked out from roslin overlay:
+	git remote add roslin-overlay git://gitorious.org/roslin/roslin.git
+	git fetch roslin-overlay
+	git checkout roslin-overlay games-puzzle/braid
+
+media-gfx/font-manager checked out from betagarden overlay:
+	git remote add betagarden-overlay git://git.overlays.gentoo.org/proj/betagarden.git
+	git fetch betagarden-overlay
+	git checkout betagarden-overlay media-gfx/font-manager
+
+media-sound/deadbeef checked out from stuff overlay:
+	git remote add stuff-overlay git://github.com/megabaks/stuff.git
+	git fetch stuff-overlay
+	git checkout stuff-overlay media-sound/deadbeef
+	
+sys-apps/ureadahead, sys-libs/libnih checked out from roslin overlay:
+	git remote add roslin-overlay git://gitorious.org/roslin/roslin.git
+	git fetch roslin-overlay
+	git checkout roslin-overlay sys-apps/ureadahead sys-libs/libnih
+
+sys-block/gparted checked out from funtoo portage-mini-2011 overlay:
+	git remote add funtoo-portage-mini-2011 git://github.com/funtoo/portage-mini-2011.git
+	git fetch funtoo-portage-mini-2011
+	git checkout funtoo-portage-mini-2011 sys-block/gparted

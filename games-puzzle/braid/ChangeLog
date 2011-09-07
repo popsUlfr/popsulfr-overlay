@@ -1,0 +1,14 @@
+# ChangeLog for games-puzzle/braid
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  10 Jan 2011; Piotr Szymaniak <szarpaj@grubelek.pl> braid-1.0.2.ebuild:
+  Seems that it's not working with some Radeon cards without the
+  nvidia-cg-toolkit after all.
+
+  08 Jan 2011; Piotr Szymaniak <lazy_bum@o2.pl> braid-1.0.2.ebuild:
+  Updated ebuild.
+
+  03 Jan 2011; Piotr Szymaniak <lazy_bum@o2.pl> braid-1.0.2.ebuild:
+  Updated ebuild with some ideas from Luca Zorzo ebuild (see bug #349136).
+
